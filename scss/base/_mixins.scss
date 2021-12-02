@@ -1,0 +1,10 @@
+
+@mixin varios-parametros($m-top, $m-bottom, $ancho) {
+    margin-top: $m-top;
+    margin-bottom: $m-bottom;
+    width: $ancho;
+}
+
+.progress {
+    @include varios-parametros(10px, 10px, 100%);
+}

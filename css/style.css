@@ -1,0 +1,421 @@
+/* --------------- Services Section Start -----------------*/
+@import url("https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;400;500&display=swap");
+.cuadro {
+  display: grid;
+  grid-template-columns: 303px;
+  grid-template-rows: 0px 165px 20px;
+  grid-template-areas: "image" "text" "stats";
+  width: 85%;
+  border-radius: 18px;
+  background: white;
+  box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.9);
+  font-family: roboto;
+  text-align: center;
+  transition: 0.5s ease;
+  cursor: pointer;
+}
+
+.cuadro-text {
+  grid-area: text;
+  margin: 25px;
+}
+
+.cuadro-text .date {
+  color: #ff076e;
+  font-size: 13px;
+}
+
+.cuadro-text p {
+  color: grey;
+  font-size: 15px;
+  font-weight: 300;
+}
+
+.cuadro-text h2 {
+  margin-top: 0px;
+  font-size: 28px;
+}
+
+.cuadro-stats {
+  grid-area: stats;
+  display: grid;
+  border-bottom-left-radius: 15px;
+  border-bottom-right-radius: 15px;
+}
+
+.cuadro-stats .stat {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  color: white;
+  padding: 10px;
+}
+
+.cuadro-stats .type {
+  font-size: 11px;
+  font-weight: 300;
+  text-transform: uppercase;
+}
+
+.cuadro-stats .value {
+  font-size: 22px;
+  font-weight: 500;
+}
+
+.cuadro-stats .value sup {
+  font-size: 12px;
+}
+
+.cuadro:hover {
+  transform: scale(1.2);
+  box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.6);
+}
+
+/* --------------- Contact Section -----------------*/
+.area-contacto {
+  display: flex;
+  margin: 10px 20px;
+}
+
+.info-contacto {
+  display: grid;
+  width: 40%;
+}
+
+input {
+  margin-bottom: 20px;
+  width: 70%;
+  height: 40px;
+  border-radius: 5px;
+}
+
+.mensaje {
+  margin: 10px 20px;
+  width: 60%;
+}
+
+textarea {
+  width: 100%;
+  height: 160px;
+  border-radius: 5px;
+}
+
+.col-sm-6 {
+  width: 100% !important;
+}
+
+/* ================== Efecto Hover Start =============== */
+.tarjeta__father:hover .tarjeta {
+  transform: rotateY(180deg);
+}
+
+.tarjeta {
+  width: 350px;
+  height: 400px;
+  position: relative;
+  transform-style: preserve-3d;
+  transition: all 600ms;
+  border-radius: 1.25rem !important;
+  border: 0.25px solid #020202;
+}
+
+.tarjeta__front {
+  background-size: cover;
+  background-position: center;
+}
+
+.tarjeta__front,
+.tarjeta__back {
+  position: absolute;
+  backface-visibility: hidden;
+  transform-style: preserve-3d;
+  border-radius: 20px;
+}
+
+.tarjeta__back {
+  transform: rotateY(180deg);
+  background: white;
+}
+
+.body__tarjeta_front {
+  text-align: center;
+  padding: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+  transform: translateZ(60px);
+}
+
+.bg {
+  position: absolute;
+  background: rgba(0, 0, 0, 0.4);
+  border-radius: 20px;
+}
+
+.body__tarjeta_back {
+  padding: 40px;
+  text-align: center;
+  transform: translateZ(60px);
+}
+
+.body__tarjeta_back p {
+  margin-top: 30px;
+  font-size: 18px;
+}
+
+.body__tarjeta_back input {
+  padding: 10px 40px;
+  margin-top: 30px;
+  font-size: 16px;
+  cursor: pointer;
+  border: none;
+  color: white;
+  background: #58B0F6;
+  box-shadow: 1px 1px 30px -5px #58B0F6;
+  border-radius: 10px;
+  transition: box-shadow 600ms;
+}
+
+.body__tarjeta_back input:hover {
+  box-shadow: 1px 1px 30px 0px #449de6;
+}
+
+/* ================== Efecto Hover End =============== */
+/* --------------- Home Section -----------------*/
+.section-title {
+  display: flex;
+  margin-top: 1rem;
+  margin-bottom: 2rem;
+}
+
+.section-title {
+  justify-content: center;
+}
+
+.section-title {
+  align-items: center;
+}
+
+.img-fluid {
+  width: 80%;
+}
+
+.about-img {
+  margin-left: -100px;
+  right: -60px;
+  display: flex;
+  justify-content: center;
+}
+
+.display-1 {
+  font-size: 160px;
+  font-weight: 1000;
+}
+
+.position-absolute {
+  font-weight: 700;
+}
+
+.typed-cursor {
+  font-size: 45px;
+  color: #ffffff;
+}
+
+.blue {
+  background-color: #1c5ce6;
+  color: #ffffff;
+}
+
+.btn {
+  border: 2px solid #1d69f7;
+}
+
+.btn-white {
+  background-color: #ffffff;
+  border: 2px solid #ffffff;
+}
+
+.btn-blue {
+  border: 2.4px solid #ffffff;
+  color: #ffffff;
+}
+
+.dropdown-toggle::after {
+  display: none !important;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html {
+  font-family: sans-serif;
+  line-height: 1.15;
+  -webkit-text-size-adjust: 100%;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+
+body {
+  margin: 0;
+  font-family: "Roboto", sans-serif;
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.5;
+  color: #6c757d;
+  text-align: left;
+  background-color: #ffffff;
+}
+
+a {
+  color: #0bceaf;
+  text-decoration: none;
+  background-color: transparent;
+}
+
+a:hover {
+  color: #078571;
+  text-decoration: underline;
+}
+
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  color: #020202 !important;
+}
+
+/* -------- Estilo Titulos -------- */
+.title {
+  background: #fff;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 15px;
+  margin-top: 15px;
+}
+
+/* Mapas */
+.body__tarjeta_front {
+  width: 100%;
+  height: 100%;
+}
+
+.bg {
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+}
+
+.tarjeta__front,
+.tarjeta__back {
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+}
+
+.cuadro.service1 .cuadro-stats {
+  background: #0d6efd;
+}
+
+.cuadro.service2 .cuadro-stats {
+  background: #6610f2;
+}
+
+.cuadro.service3 .cuadro-stats {
+  background: #6f42c1;
+}
+
+.cuadro.service4 .cuadro-stats {
+  background: #d63384;
+}
+
+.cuadro.service5 .cuadro-stats {
+  background: #dc3545;
+}
+
+.cuadro.service6 .cuadro-stats {
+  background: #fd7e14;
+}
+
+/* ---------------- Media Query -------------*/
+@media (max-width: 700px) {
+  .about-img {
+    margin-left: 20px;
+    right: 0px;
+    top: 30px;
+  }
+}
+@media (max-width: 767px) {
+  .tarjeta__father {
+    display: flex;
+    justify-content: center;
+  }
+
+  .cuadro {
+    grid-template-columns: 402px;
+    width: 78%;
+  }
+}
+@media (min-width: 768px) and (max-width: 991px) {
+  .tarjeta {
+    width: 320px;
+    height: 350px;
+  }
+
+  .body__tarjeta_front {
+    width: 100%;
+  }
+
+  .cuadro {
+    width: 100%;
+    grid-template-columns: 216px;
+    grid-template-rows: 0px 185px 20px;
+  }
+}
+@media (min-width: 992px) and (max-width: 1115px) {
+  .tarjeta {
+    width: 280px;
+    height: 350px;
+  }
+
+  .body__tarjeta_front h1 {
+    font-size: calc(0.75rem + 1.5vw);
+  }
+
+  .body__tarjeta_back {
+    padding: 15px;
+  }
+
+  .cuadro {
+    grid-template-columns: 252px;
+    grid-template-rows: 0px 185px 20px;
+  }
+}
+.progress {
+  margin-top: 10px;
+  margin-bottom: 10px;
+  width: 100%;
+}
+
+.section-title {
+  display: flex;
+  margin-top: 1rem;
+  margin-bottom: 2rem;
+}
+
+.section-title {
+  justify-content: center;
+}
+
+.section-title {
+  align-items: center;
+}
+
+/*# sourceMappingURL=style.css.map */

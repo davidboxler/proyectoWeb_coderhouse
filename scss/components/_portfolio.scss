@@ -1,0 +1,70 @@
+/* ================== Efecto Hover Start =============== */
+
+.tarjeta__father:hover .tarjeta{
+    transform: rotateY(180deg);
+  }
+  .tarjeta{
+    width: 350px;
+    height: 400px;
+    position: relative;
+    transform-style: preserve-3d;
+    transition: all 600ms;
+    border-radius: 1.25rem !important;
+    border: 0.25px solid #020202;
+  }
+  .tarjeta__front{
+    background-size: cover;
+    background-position: center;
+  }
+  .tarjeta__front,
+  .tarjeta__back{
+    position: absolute;
+    backface-visibility: hidden;
+    transform-style: preserve-3d;
+    border-radius: 20px;
+  }
+  .tarjeta__back{
+    transform: rotateY(180deg);
+    background: white;
+  }
+  .body__tarjeta_front{
+    text-align: center;
+    padding: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    transform: translateZ(60px);
+  }
+  .bg{
+    position: absolute;
+    background: rgba(0,0,0,0.4);
+    border-radius: 20px;
+  }
+  .body__tarjeta_back{
+    padding: 40px;
+    text-align: center;
+    transform: translateZ(60px);
+  }
+  .body__tarjeta_back p{
+    margin-top: 30px;
+    font-size: 18px;
+  }
+  .body__tarjeta_back input{
+    padding: 10px 40px;
+    margin-top: 30px;
+    font-size: 16px;
+    cursor: pointer;
+    border: none;
+    color: white;
+    background: #58B0F6;
+    box-shadow: 1px 1px 30px -5px #58B0F6;
+    border-radius: 10px;
+    transition: box-shadow 600ms;
+  }
+  .body__tarjeta_back input:hover{
+    box-shadow: 1px 1px 30px 0px #449de6;
+  }
+
+  /* ================== Efecto Hover End =============== */
+  

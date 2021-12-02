@@ -1,0 +1,26 @@
+/* Mapas */
+
+$standard: (
+    width-standard: 100%,
+    height-standard: 100%,
+    top-standard: 0,
+    left-standard: 0
+);
+
+.body__tarjeta_front {
+    width: map-get($standard, width-standard);
+    height: map-get($standard, height-standard);
+}
+.bg {
+    width: map-get($standard, width-standard);
+    height: map-get($standard, height-standard);
+    top: map-get($standard, top-standard);
+    left: map-get($standard, left-standard);
+}
+.tarjeta__front,
+.tarjeta__back{ 
+    width: map-get($standard, width-standard);
+    height: map-get($standard, height-standard);
+    top: map-get($standard, top-standard);
+    left: map-get($standard, left-standard);
+}

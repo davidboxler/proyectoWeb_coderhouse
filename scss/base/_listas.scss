@@ -1,0 +1,35 @@
+$colores: 
+#0d6efd,
+ #6610f2,
+  #6f42c1,
+   #d63384,
+    #dc3545,
+     #fd7e14,
+      #ffc107,
+       #198754,
+        #20c997,
+         #0dcaf0;
+
+     .cuadro.service1 .cuadro-stats {
+         background: nth($colores, 1);
+     }
+
+     .cuadro.service2 .cuadro-stats {
+        background: nth($colores, 2);
+    }
+
+    .cuadro.service3 .cuadro-stats {
+        background: nth($colores, 3);
+    }
+
+    .cuadro.service4 .cuadro-stats {
+        background: nth($colores, 4);
+    }
+
+    .cuadro.service5 .cuadro-stats {
+        background: nth($colores, 5);
+    }
+
+    .cuadro.service6 .cuadro-stats {
+        background: nth($colores, 6);
+    }

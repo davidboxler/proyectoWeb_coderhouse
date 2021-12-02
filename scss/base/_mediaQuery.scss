@@ -1,0 +1,52 @@
+/* ---------------- Media Query -------------*/
+
+@media (max-width: 700px) {
+    .about-img {
+      margin-left: 20px;
+      right: 0px;
+      top: 30px;
+    }
+  }
+  
+  @media (max-width: 767px) {
+      .tarjeta__father {
+         display: flex;
+         justify-content: center;
+      }
+      .cuadro {
+        grid-template-columns: 402px;
+        width: 78%;
+      }
+  }
+  
+  @media (min-width: 768px) and (max-width: 991px) {
+    .tarjeta {
+      width: 320px;
+      height: 350px;
+    }
+    .body__tarjeta_front {
+      width: 100%;
+    }
+    .cuadro {
+      width: 100%;
+      grid-template-columns: 216px;
+      grid-template-rows: 0px 185px 20px;
+    }
+  }
+  
+  @media (min-width: 992px) and (max-width: 1115px) {
+    .tarjeta {
+      width: 280px;
+      height: 350px;
+    }
+    .body__tarjeta_front h1 {
+      font-size: calc(0.75rem + 1.5vw);
+    }
+    .body__tarjeta_back {
+      padding: 15px;
+    }
+    .cuadro {
+      grid-template-columns: 252px;
+      grid-template-rows: 0px 185px 20px;
+    }
+  }
