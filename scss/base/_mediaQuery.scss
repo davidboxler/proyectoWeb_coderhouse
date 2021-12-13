@@ -1,5 +1,12 @@
 /* ---------------- Media Query -------------*/
 
+@media (min-width: 365px) and (max-width: 640px) {
+  .body__tarjeta_back p {
+    margin-top: 0px;
+    font-size: 17px;
+  }
+}
+
 @media (max-width: 700px) {
     .about-img {
       margin-left: 20px;
@@ -32,6 +39,10 @@
       grid-template-columns: 216px;
       grid-template-rows: 0px 185px 20px;
     }
+    .body__tarjeta_back p {
+      margin-top: 0px;
+      font-size: 17px;
+    }
   }
   
   @media (min-width: 992px) and (max-width: 1115px) {
@@ -48,5 +59,9 @@
     .cuadro {
       grid-template-columns: 252px;
       grid-template-rows: 0px 185px 20px;
+    }
+    .body__tarjeta_back p {
+      margin-top: 20px;
+      font-size: 17px;
     }
   }

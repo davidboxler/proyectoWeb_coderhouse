@@ -1,64 +1,70 @@
 /* --------------- Services Section Start -----------------*/
 
-.cuadro {
-  display: grid;
-  grid-template-columns: 303px;
-  grid-template-rows: 0px 165px 20px;
-  grid-template-areas: "image" "text" "stats";
-  width: 85%;
-  border-radius: 18px;
-  background: white;
-  box-shadow: 5px 5px 15px rgba(0,0,0,0.9);
-  font-family: roboto;
-  text-align: center;
-
-  transition: 0.5s ease;
-  cursor: pointer;
-}
-.cuadro-text {
-  grid-area: text;
-  margin: 25px;
-}
-.cuadro-text .date {
-  color: rgb(255, 7, 110);
-  font-size:13px;
-}
-.cuadro-text p {
-  color: grey;
-  font-size:15px;
-  font-weight: 300;
-}
-.cuadro-text h2 {
-  margin-top:0px;
-  font-size:28px;
-}
-.cuadro-stats {
-  grid-area: stats; 
-  display: grid;
-  border-bottom-left-radius: 15px;
-  border-bottom-right-radius: 15px;
-}
-.cuadro-stats .stat {
-  display: flex;
-  align-items: center;
+.contenedor-servicios {
   justify-content: center;
-  flex-direction: column;
-  color: white;
-  padding:10px;
+  gap: 20px;
 }
-.cuadro-stats .type {
-  font-size: 11px;
+.contenedor-servicios .serviceBox {
+  position: relative;
+  width: 350px;
+  height: 280px;
+  background: #fff;
+  border-radius: 20px;
+  border: 1px solid #51446e;
+  overflow: hidden;
+}
+.contenedor-servicios .serviceBox .icon {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: var(--i);
+  transition: 0.5s;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 2;
+  transition-delay: 0.25s;
+}
+.contenedor-servicios .serviceBox:hover .icon {
+  top: 30px;
+  left: calc(50% - 40px);
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  transition-delay: 0s;
+}
+.contenedor-servicios .serviceBox .icon ion-icon {
+  font-size: 5rem;
+  color: #fff;
+  transition: 0.5s;
+  transition-delay: 0.25s;
+}
+.contenedor-servicios .serviceBox:hover .icon ion-icon {
+  font-size: 2rem;
+  transition-delay: 0s;
+}
+.contenedor-servicios .serviceBox .content {
+  position: relative;
+  padding: 20px;
+  color: #fff;
+  text-align: center;
+  margin-top: 100px;
+  z-index: 1;
+  transform: scale(0);
+  transition: 0.5s;
+  transition-delay: 0s;
+}
+.contenedor-servicios .serviceBox:hover .content {
+  transform: scale(1);
+  transition-delay: 0.25s;
+}
+.contenedor-servicios .serviceBox .content h2 {
+  margin-top: 10px;
+  margin-bottom: 5px;
+}
+.contenedor-servicios .serviceBox .content p {
   font-weight: 300;
-  text-transform: uppercase;
-}
-.cuadro-stats .value {
-  font-size: 22px;
-  font-weight: 500;
-}
-.cuadro-stats .value sup {
-  font-size: 12px;
-}
-.cuadro:hover {
-  transform: scale(1.2);
-  box-shadow: 5px 5px 15px rgba(0,0,0,0.6);
+  line-height: 1.5em;
 }
