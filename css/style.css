@@ -8,7 +8,7 @@
 .contenedor-servicios .serviceBox {
   position: relative;
   width: 350px;
-  height: 280px;
+  height: 300px;
   background: #fff;
   border-radius: 20px;
   border: 1px solid #51446e;
@@ -252,6 +252,45 @@ textarea {
   display: none !important;
 }
 
+.navbar-nav .nav-item .nav-link:hover {
+  color: #0d6efd !important;
+}
+
+.timeline {
+  position: relative;
+}
+
+.timeline::before {
+  content: "";
+  position: absolute;
+  height: 100%;
+  width: 1px;
+  top: 0;
+  left: -15px;
+  background-color: #0d6efd;
+}
+
+.timeline-item {
+  margin-bottom: 30px;
+  position: relative;
+  padding: 10px 0 0 40px;
+}
+
+.timeline-item::before {
+  content: "";
+  position: absolute;
+  height: 11px;
+  width: 11px;
+  background-color: #0d6efd;
+  left: -20px;
+  top: 16px;
+  border-radius: 50%;
+}
+
+.timeline-item:last-child {
+  margin-bottom: 0;
+}
+
 .error404 {
   background-image: linear-gradient(-225deg, #473B7B 0%, #3584A7 51%, #30D2BE 100%);
 }
@@ -295,6 +334,44 @@ textarea {
 }
 .bounce {
   animation-name: bounce;
+}
+
+/* ------------- Skills Section ------------ */
+.skills {
+  display: flex;
+  justify-content: center;
+}
+
+.caja {
+  display: flex;
+  justify-content: space-between;
+  width: 50%;
+  margin-left: 20px;
+  margin-right: 20px;
+}
+
+.circulo {
+  background-color: #ffffff;
+  z-index: 1;
+  border-radius: 50%;
+  height: 135px;
+  width: 140px;
+}
+
+.box-logo {
+  position: relative;
+  margin: 0 30px;
+  top: 30px;
+}
+
+.box-logo svg {
+  overflow: visible;
+  width: 5rem;
+}
+
+.titulo-grande {
+  font-size: 140px;
+  font-weight: 1000;
 }
 
 *,
@@ -354,6 +431,10 @@ p {
   margin-top: 15px;
 }
 
+.color-white {
+  color: #fff;
+}
+
 /* Mapas */
 .body__tarjeta_front {
   width: 100%;
@@ -387,19 +468,49 @@ p {
   background: #6f42c1;
 }
 
-.cuadro.service4 .cuadro-stats {
-  background: #d63384;
-}
-
-.cuadro.service5 .cuadro-stats {
-  background: #dc3545;
-}
-
-.cuadro.service6 .cuadro-stats {
-  background: #fd7e14;
-}
-
 /* ---------------- Media Query -------------*/
+@media (min-width: 400px) and (max-width: 499px) {
+  .titulo-grande {
+    font-size: 40px;
+    font-weight: 1000;
+  }
+}
+@media (min-width: 500px) and (max-width: 640px) {
+  .titulo-grande {
+    font-size: 55px;
+    font-weight: 1000;
+  }
+}
+@media (min-width: 641px) and (max-width: 768px) {
+  .titulo-grande {
+    font-size: 70px;
+    font-weight: 1000;
+  }
+}
+@media (min-width: 769px) and (max-width: 991px) {
+  .titulo-grande {
+    font-size: 93px;
+    font-weight: 1000;
+  }
+}
+@media (min-width: 992px) and (max-width: 1115px) {
+  .titulo-grande {
+    font-size: 125px;
+    font-weight: 1000;
+  }
+}
+@media (min-width: 400px) and (max-width: 991px) {
+  .caja {
+    display: grid;
+    grid-gap: 15px;
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: repeat(3, 150px);
+    align-items: start;
+    justify-items: center;
+    margin-left: 20px;
+    margin-right: 20px;
+  }
+}
 @media (min-width: 365px) and (max-width: 640px) {
   .body__tarjeta_back p {
     margin-top: 0px;

@@ -1,0 +1,33 @@
+
+/* ------------- Skills Section ------------ */
+.skills {
+  display: flex;
+  justify-content: center;
+}
+.caja {
+    display: flex;
+    justify-content: space-between;
+    width: 50%;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+.circulo {
+    background-color: #ffffff;
+    z-index: 1;
+    border-radius: 50%;
+    height: 135px;
+    width: 140px;
+}
+.box-logo {
+  position: relative;
+  margin: 0 30px;
+  top: 30px;
+}
+.box-logo svg {
+  overflow: visible;
+  width: 5rem;
+}
+.titulo-grande {
+  font-size: 140px;
+  font-weight: 1000;
+}
